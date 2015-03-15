@@ -1,10 +1,10 @@
 .button{
 	border: 2px solid green;
 	border-radius: 5px;
-	background: #aaffaa;
+	background: #80ff80;
 }
 #team{
-	font-size: 20px;
+	font-size: 40px;
 }
 *{
 	text-align:center;
