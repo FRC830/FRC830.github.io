@@ -8,9 +8,11 @@ $(function(){
 		var pre = prefixes[pre_index];
 		
 		var suf_index = Math.floor(Math.random() * suffixes.length);
-		var suf = suffixes[suf_index];		
+		var suf = suffixes[suf_index];	
+
+		var number = Math.floor(Math.random() * (999)) + 6000;
 		
-		var name = pre + suf;
-		$("#team").html(name)
+		var name = "Team #" + number + " The " + pre + suf;
+		$("#team").html(name);
 	});	
 });
