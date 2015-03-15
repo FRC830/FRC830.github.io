@@ -1,5 +1,5 @@
-var prefixes = ["Robo", "Tech"];
-var suffixes = [" Eagles", "gineers"];
+var prefixes = ['Bionic', 'Cyber', 'Robo', 'Gear', 'STEM', 'STEAM', 'Killer', 'Techno', 'Tech', 'Mecha', 'Metal', 'Steel', 'Atomic', 'Atom'];
+var suffixes = ['Gears', 'Bots', '-gineers', 'Hawks', 'Horses', 'Cats', 'Pack', 'Team', 'Devils', 'Storm', 'Warriors', 'Knights', 'Heads', 'Atoms', 'Robotics', 'Dogs', '-botics', 'Monkeys', 'Birds', 'Tech'];
 
 $(function(){
 	$(".button").click(function(){
