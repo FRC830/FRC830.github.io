@@ -3,6 +3,8 @@
 	border-radius: 5px;
 	background: #80ff80;
 	font-size: 20px;
+	cursor: default;
+	user-select: none;
 }
 #team{
 	font-size: 40px;
