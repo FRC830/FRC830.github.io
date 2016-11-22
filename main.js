@@ -1,34 +1,35 @@
-var prefixes = [' Bionic', ' Cyber', ' Robo', ' Gear', ' STEM', ' STEAM',
-				' Killer', ' Techno', ' Tech', ' Mecha', ' Metal', ' Steel', 
-				' Atomic', ' Atom', ' Viking', ' Mech', ' Rainbow', ' Sci', 
-				' Laser', ' Panther', ' The', ' Green', ' Red', ' Blue', 
-				' Flying', ' Titanium', ' Digital', ' Alpha', ' Electric', 
-				' Electro', ' Thunder', ' Turbo', ' Lightning', ' Robotic', 
-				' Iron', ' Plasma', ' Rocket'];
-				
-var suffixes = [' Gears', ' Bots', 'gineers', ' Hawks', ' Cats', ' Pack', 
-				' Team', ' Devils', ' Storm', ' Warriors', ' Knights', 'heads',
-				' Atoms', ' Robotics', ' Dogs', 'botics', ' Monkeys', ' Birds',
-				' Tech', ' Dragons', ' Ponies', ' Botz', ' Sharks', ' Nerds',
-				' Force', ' Fire', ' Machines', ' Tigers', ' Ninjas',
-				' Bulldogs', ' Titans', ' Rats', ' Panthers', ' Stallions',
-				' Beavers', ' Colts', ' Chaos', ' Wolves', ' Eagles',
-				' Trojans', ' Spartans', ' Huskies', ' Penguins', 'trons',
-				' Bees', ' Pirates', ' Mayhem', ' Martians', ' Phoenix', 
-				' Rangers'];
+var prefixes = [' Alpha', ' Atom', ' Atomic', ' Bionic', ' Blue', 
+                ' Cyber', ' Digital', ' Electric', ' Electro', ' Flying',
+                ' Gear', ' Green', ' Iron', ' Killer', ' Laser',
+                ' Lightning', ' Mech', ' Mecha', ' Metal', ' Panther',
+                ' Plasma', ' Quantum', ' Rainbow', ' Red', ' Robo', 
+                ' Robotic', ' Rocket', ' STEAM', ' STEM', ' Sci',
+                ' Steel', ' Tech', ' Techno', ' The', ' Thunder',
+                ' Titanium', ' Turbo', ' Viking'];
+                
+var suffixes = [' Atoms', ' Beavers', ' Bees', ' Birds', ' Bots',
+                ' Botz', ' Bulldogs', ' Cats', ' Chaos', ' Colts',
+                ' Devils', ' Dogs', ' Dragons', ' Eagles', ' Fire',
+                ' Force', ' Gears', ' Hawks', ' Huskies', ' Knights',
+                ' Machines', ' Martians', ' Mayhem', ' Monkeys', ' Nerds',
+                ' Ninjas', ' Pack', ' Panthers', ' Penguins', ' Phoenix',
+                ' Pirates', ' Ponies', ' Rangers', ' Rats', ' Robotics',
+                ' Sharks', ' Spartans', ' Stallions', ' Storm', ' Team',
+                ' Tech', ' Tigers', ' Titans', ' Trojans', ' Warriors',
+                ' Wolves', 'botics', 'gineers', 'heads', 'trons'];
 
 $(function(){
-	$(".button").click(function(){
-		
-		var pre_index = Math.floor(Math.random() * prefixes.length);
-		var pre = prefixes[pre_index];
-		
-		var suf_index = Math.floor(Math.random() * suffixes.length);
-		var suf = suffixes[suf_index];	
+    $(".button").click(function(){
+        
+        var pre_index = Math.floor(Math.random() * prefixes.length);
+        var pre = prefixes[pre_index];
+        
+        var suf_index = Math.floor(Math.random() * suffixes.length);
+        var suf = suffixes[suf_index];  
 
-		var number = Math.floor(Math.random() * (999)) + 7000;
-		
-		var name = "Team #" + number + pre + suf;
-		$("#team").html(name);
-	});	
+        var number = Math.floor(Math.random() * (999)) + 7000;
+        
+        var name = "Team #" + number + pre + suf;
+        $("#team").html(name);
+    }); 
 });
