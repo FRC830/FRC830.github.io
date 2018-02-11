@@ -27,7 +27,7 @@ $(function(){
         var suf_index = Math.floor(Math.random() * suffixes.length);
         var suf = suffixes[suf_index];  
 
-        var number = Math.floor(Math.random() * (999)) + 7000;
+        var number = Math.floor(Math.random() * (999)) + 8000;
         
         var name = "Team #" + number + pre + suf;
         $("#team").html(name);
